@@ -1,3 +1,9 @@
+// if the button cta-btn is clicked, scroll to the section with the class of projects
+document.querySelector('.cta-btn').addEventListener('click', function() {
+    document.querySelector('.projects').scrollIntoView({behavior: 'smooth'});
+});
+
+// Animate the hidden elements when they are in the viewport
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
@@ -12,8 +18,6 @@ const observer = new IntersectionObserver(entries => {
   hiddenElement.forEach(element => {
       observer.observe(element);
   });
-
-  
 
 // Get all skill cards
 var skills = document.querySelectorAll('.skills-list .skill-card:not(.always-show)');
