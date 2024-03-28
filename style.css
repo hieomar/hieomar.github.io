@@ -195,7 +195,57 @@ body {
     font-weight: bold; 
     font-style: italic;
   }
-   
+  
+  .icon {
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    .hero h1 {
+      font-size: 2rem;
+    }
+
+    .hero h3 {
+      font-size: 1rem;
+    }
+
+    .hero-container {
+      padding: 0 10px;
+    }
+
+    .profile-image {
+      width: 150px;
+      height: 150px;
+    }
+
+    .icon {
+      display: block;
+    }
+
+    .skills-list {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      padding: 0 10px;
+    }
+    
+    .skill-card {
+      display: inline-block;
+      align-items: center;
+      justify-content: center;
+      width: 100px;
+    }
+
+    .skill-card p {
+      font-size: 14px;
+    }
+    
+    .hide {
+      display: none;
+    }
+  } 
   /* Contact me section */
   .contact h2 {
     font-size: 2rem;
@@ -226,6 +276,8 @@ body {
     font-size: 3rem; 
     color: #0076b2;
   }
+
+  
   
   /* Dark theme styles */
   @media (prefers-color-scheme: dark) {
