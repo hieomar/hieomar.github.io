@@ -93,7 +93,12 @@ body {
   text-align: center;
 }
 
+.about {
+  padding: 50px 0;
+}
+
 .about-text p {
+  margin-bottom: 20px;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -317,7 +322,7 @@ body {
   opacity: 0;
   filter: blur(5px);
   transform: translateX(-100%); 
-  transform: all 2 ease-in-out ;
+  transform: all 2 ;
 }
 
 .animate {
@@ -331,3 +336,6 @@ body {
     transition: none;
   }
 } */
+.hero {
+  transform: none !important;
+}
